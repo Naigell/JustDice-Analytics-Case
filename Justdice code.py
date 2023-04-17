@@ -60,11 +60,6 @@ print(adspend_value_group)
 
 print (adspend_client_group)
 
-"""As we can see from the grouped table the amount spent on ads in network 60 is over 5 times the amount spent on network 10.
-   But this spend on network 60 has only returned around 1 and the half times the number of clients. It can be reasonably concluded
-   that a disproportionate ROI in advertising on both networks has been observed. A suggestion is that more of the advertising budget 
-   should be tilted towards Network 10 to save cost or JustDice can renegogatiate the advertising fees with network 60"""
-
 
 #count number of distinct apps installed based on data from the installs table
 
@@ -73,7 +68,8 @@ n = installs_df.app_id.nunique()
 print("No.of distinct apps installed :", n)
 
 power_BI_reference = """Of the 51 apps Power BI will now be used to check for the most installed apps (installs > 10,000) 
- and least installed apps (installs < 100) #NOTE: Threshold values of 100 and 10000 were arbitrarily chosen."""
+ and least installed apps (installs < 100). See barchart referencing this findings in the presentation document.
+ #NOTE: Threshold values of 100 and 10000 were arbitrarily chosen."""
 
 print(power_BI_reference) 
 
