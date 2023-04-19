@@ -44,7 +44,21 @@ payouts_df = payouts_df.sort_values('event_date')
 revenue_df = revenue_df.sort_values('event_date')
 installs_df = installs_df.sort_values('event_date')
 
-"""First we draw a focus on advertising. Analysis of the adspend data will help paint a clearer 
+#Find the total spent on advertising, total value generated from app installs and total payouts to app users in the period under review
+ads_total = adspend_df["value_usd"].sum()     
+print(f"The total spend on advertising is {ads_total}")
+
+payouts_total = payouts_df["value_usd"].sum()     
+print(f"The total payouts to app users is {payouts_total}")
+
+revenue_total = revenue_df["value_usd"].sum()     
+print(f"The total revenue is {revenue_total}")
+
+#Find the total number of app installs in the period under review
+total_installs =  installs_df["install_id"].count()
+print(f"The total number of installs is {total_installs}")
+
+"""We now draw a focus on advertising. Analysis of the adspend data will help paint a clearer 
    picture on the cost of advertising on different networks. In this case we advertise on only 2 networks
    (network id 10 and 60). The adspend table will be collapse by grouping the data into those two networks"""
 
