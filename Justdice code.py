@@ -74,6 +74,10 @@ print(adspend_value_group)
 
 print (adspend_client_group)
 
+adspend_observation = """As we can see from the grouped adspend tables the amount spent on ads in network 60 is over 5 times the amount spent on network 10.
+But this spend on network 60 has only returned around 1 and the half times the number of clients."""
+
+print(adspend_observation)
 
 #count number of distinct apps installed based on data from the installs table
 
